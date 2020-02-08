@@ -99,8 +99,9 @@ namespace ConsoleApp1
                     }
                 }
                 sw.WriteLine("ROW FORMAT DELIMITED FIELDS TERMINATED BY ','");
-                sw.WriteLine("STORED AS TEXTFILE LOCATION 'abfs://tstdatalake@nchntsdep003sta.dfs.core.chinacloudapi.cn/test/inbound/thirdParty/CN/Sales/SalesOrder/TMS/Order/"+item
-                    +"'");
+                //sw.WriteLine("STORED AS TEXTFILE LOCATION 'abfs://tstdatalake@nchntsdep003sta.dfs.core.chinacloudapi.cn/test/inbound/thirdParty/CN/Sales/SalesOrder/TMS/Order/"+item
+                //    +"'");
+                sw.WriteLine("STORED AS TEXTFILE LOCATION  '${hiveconf:rootpath1}';");
                 //清空缓冲区
                 sw.Flush();
                 //关闭流
