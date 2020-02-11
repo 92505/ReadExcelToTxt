@@ -70,6 +70,7 @@
     <None Include="App.config" />
     <None Include="File\TMS.xlsx" />
     <None Include="packages.config" />
+    <None Include="README.MD" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OutPutFile\" />
